@@ -1,0 +1,23 @@
+p{
+    background-color: red;
+    font-size: 20px;
+    color:white;
+}
+img{
+    width:100%;
+}
+.section{
+ height:auto;
+ width :50px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h2,h1,p,img{
+    padding: 0px;
+    margin: 0px;
+        box-sizing: border-box;
+
+}
