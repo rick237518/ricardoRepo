@@ -43,6 +43,144 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+p span{
+    color:var(--main-button-color);
+}
+.desktop-menu li  {
+display: none;
+}
+.desktop_services{
+     display: none;
+   
+}
+
+.desktop__display-show{
+    display: none !important;
+}
+.footer__list-desktop{
+    display: none;    
+}
+.section__buttons_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .footer__list-desktop  {
+display: inline ;
+    }
+    ul.footer__list-desktop {
+    display: flex;
+}
+li.footer__list-item {
+    padding: 2rem;
+}
+.footer__image {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+     .footer__list-desktop ul li {
+ display: inline-block;
+ padding: 3rem;
+     }
+    .footer__wrapper{
+        display: none !important;
+    }
+ .services__wrapper-first ul {
+    margin-bottom: 1rem !important;
+
+}
+.section__buttons_item{
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+    .section__buttons{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+    .video-container {
+        display: flex;
+        justify-content: center;
+        
+
+    }
+    
+    .video-container  svg {
+        width:70%;
+        height: 70%;
+        margin: 0 auto ;
+    }
+    ul.services__list.text-center {
+    text-align: left;
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 5rem;
+}
+  ul.services__list.text-center li{
+      padding: 0 1rem;
+  }
+    
+ul.services__list.text-center {
+    text-align: left;
+}
+  .desktop_services{
+     display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+
+}
+.desktop_services ul{
+    padding: 0 2rem;
+}
+
+    ul.services__item,ul.our-services__item  {
+     display: flex;
+    justify-content: space-between;
+    width: 53%;
+    height: 30%;
+    margin: 0px auto;
+    align-items: center;
+    justify-items: center;
+}
+.desktop__display-show {
+    display: block  !important;
+}
+.desktop__display-hide{
+    display: none;
+}
+ .desktop-menu li  {
+list-style: none;
+display: inline;
+padding: 0.5rem;
+
+}
+.header__menu-icon svg {
+display: none;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -61,10 +199,12 @@ p{
     font-family: 'PT Sans', sans-serif;
     line-height: 150%;
 }
+
 body {
 	line-height: 1;
     width: 100%;
     margin: 0 auto;
+    overflow-x: hidden
 }
 ol, ul {
 	list-style: none;
@@ -110,19 +250,30 @@ body {
    justify-content: space-between;
 
 }
+.video.video-container {
+    display: flex;
+    justify-content: center;
+}
 .container{
     width: 100%;  
 }
 .container__wrapper{
+    max-width: 1920px;
    width:87%;
    margin: 0px auto;
    position: relative;
    transform:translate(-50% -50%);
 }
+.header__menu-icon{
+    float: right;
+margin-right: 1rem;
+flex: 1;
+}
 
 .header__menu-icon svg {
 float: right;
 margin-right: 1rem;
+flex: 1;
 }
 p.content{
       font-family: 'PT Sans', sans-serif;
@@ -139,11 +290,10 @@ p.content-small{
  font-family: 'PT Sans', sans-serif;
    font-style:italic;
     font-size:0.8rem;
-    margin-left:8px;
 }
 h1,h2,h3{
     font-family: 'PT Sans', sans-serif ;
-   padding-left:10px;
+   /* padding-left:10px; */
     font-size: 2.8rem;
     font-weight: Bold;
     line-height: 3rem;
@@ -151,7 +301,7 @@ h1,h2,h3{
     }
     h1.h1_large{
     font-family: 'PT Sans', sans-serif ;
-    padding-left:10px;
+    /* padding-left:10px; */
     font-size: 2.9rem !important;
     font-weight: Bold;
     line-height: 3rem;
@@ -172,10 +322,10 @@ h1,h2,h3{
       margin-bottom: 2rem;
   }
     .services__wrapper-first {
+        width: 80%;
         text-align: center;
-        margin-top:  5rem ;
-         margin-bottom:  7rem ;
-
+        margin:  5rem auto 7rem auto ;
+     
     }
     .services__item-bold{
        margin-top: 1rem;
